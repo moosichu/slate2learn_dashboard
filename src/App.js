@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { content } from './dataset';
-
-console.log(content);
+import { experiences } from './dataset';
 
 class App extends Component {
   render() {
@@ -16,6 +14,11 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        <div>
+          {experiences.map(({ question_id, score }) => (
+            <div>{question_id}: {score}</div>
+          ))}
+        </div>
       </div>
     );
   }
