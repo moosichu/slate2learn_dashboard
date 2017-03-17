@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { content } from './dataset';
+
+console.log(content);
 
 class App extends Component {
   render() {

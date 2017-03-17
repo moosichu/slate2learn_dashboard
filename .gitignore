@@ -18,4 +18,4 @@ yarn-error.log*
 
 
 # don't save the data
-data/
+/src/dataset/*.json
